@@ -124,7 +124,7 @@ header {
 
 	#landing {
 		margin-top: 3.8em;
-		height: 90vh;
+		height: 88vh;
 
 		.preLandingHeading {
 			font-size: 1.375em;
@@ -138,6 +138,14 @@ header {
 			@media(max-width: 767px) {
 				& {
 					display: none;
+				}
+			}
+		}
+
+		.landingHeading{
+			@media(max-width: 767px) {
+				& {
+					font-size: 2em;
 				}
 			}
 		}

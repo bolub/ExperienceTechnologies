@@ -82,12 +82,15 @@ header .btn-outline-light:hover {
 
 header #landing {
   margin-top: 3.8em;
-  height: 90vh; }
+  height: 88vh; }
   header #landing .preLandingHeading {
     font-size: 1.375em; }
     @media (max-width: 767px) {
       header #landing .preLandingHeading {
         display: none; } }
+  @media (max-width: 767px) {
+    header #landing .landingHeading {
+      font-size: 2em; } }
   header #landing .landingBtn {
     padding: .6rem 1.8rem .6rem 1.8rem;
     font-size: 1.2em;
