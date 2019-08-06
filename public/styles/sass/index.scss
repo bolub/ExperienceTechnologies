@@ -152,7 +152,7 @@ header {
 
 		.landingBtn {
 			padding: .6rem 1.8rem .6rem 1.8rem;
-			font-size: 1.2em;
+			font-size: 1.06em;
 			background: $secondaryColor;
 			color: #343a40;
 
@@ -166,7 +166,7 @@ header {
 
 			@media(max-width:440px){
 				&{
-					font-size: 1.5em;
+					font-size: 1.3em;
 				}
 			}
 		}

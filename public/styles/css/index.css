@@ -93,7 +93,7 @@ header #landing {
       font-size: 2em; } }
   header #landing .landingBtn {
     padding: .6rem 1.8rem .6rem 1.8rem;
-    font-size: 1.2em;
+    font-size: 1.06em;
     background: #F2FD48;
     color: #343a40; }
     header #landing .landingBtn:hover {
@@ -104,7 +104,7 @@ header #landing {
       border: 1px solid #F2FD48; }
     @media (max-width: 440px) {
       header #landing .landingBtn {
-        font-size: 1.5em; } }
+        font-size: 1.3em; } }
   header #landing .headerImage {
     width: 100%;
     height: auto; }
