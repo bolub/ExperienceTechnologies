@@ -1,14 +1,175 @@
-$primaryColor: #000473;
-$secondaryColor: #F2FDAE;
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 
-.bgPrimary{
+$primaryColor: #000473;
+$secondaryColor: #F2FD48;
+
+html{
+    font-size: calc(12px + .4vw);
+}
+
+
+body {
+	font-family: 'Raleway', sans-serif;
+}
+
+
+
+hr {
+	width: 100px;
+	border: .8px solid $secondaryColor;
+	padding: 0;
+	margin-top: 0;
+}
+
+
+.navbar-toggler-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='1' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler {
+	outline: none !important;
+}
+
+
+p{
+	color: rgba(0, 0, 0, 0.75);
+	line-height: 30px;
+}
+
+::placeholder{
+	color: #86888C !important;
+}
+
+.lead{
+	font-size: 18px;
+
+	@media screen and (max-width:440px) {
+		&{
+			font-size: 16px;
+		}
+	}
+}
+
+.c-1{
+	order: 1;
+	text-align: left;
+
+	@media(max-width: 767px){
+		&{
+			order: 2;
+			text-align: center;
+		}
+	}
+}
+
+.c-2 {
+	order: 2;
+
+	@media(max-width: 767px) {
+		& {
+			order: 1;
+		}
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 900;
+}
+
+.bgPrimary {
 	background: $primaryColor;
 }
 
-.bgSecondary{
+.bgSecondary {
 	background: $secondaryColor;
 }
 
-nav{
-	background: transparent;
+header {
+	nav{
+		border-top: 2px solid $secondaryColor;
+	
+		.navbar-nav {
+			.nav-link {
+				color: white;
+				font-size: 18px;
+				margin-right: 12px;
+				letter-spacing: .3px;
+
+				&:after {
+					content: '';
+					width: 0px;
+					height: 1px;
+					display: block;
+					background: $secondaryColor;
+					transition: 300ms;
+				}
+
+				&:hover:after {
+					width: 100%;
+				}
+			}
+		}
+
+	}
+	.btn-outline-light:hover {
+		color: black !important;
+	}
+
+	#landing {
+		margin-top: 3.8em;
+		height: 90vh;
+
+		.preLandingHeading {
+			font-size: 1.375em;
+
+			// @media(max-width:440px){
+			// 	&{
+			// 		font-size: 1.4rem;
+			// 	}
+			// }
+
+			@media(max-width: 767px) {
+				& {
+					display: none;
+				}
+			}
+		}
+
+		.landingBtn {
+			padding: .6rem 1.8rem .6rem 1.8rem;
+			font-size: 1.2em;
+			background: $secondaryColor;
+			color: #343a40;
+
+			&:hover{
+				margin-left: 5px;
+				transition: all .3s;
+				background: $primaryColor;
+				color: white !important;
+				border: 1px solid $secondaryColor;
+			}
+
+			@media(max-width:440px){
+				&{
+					font-size: 1.5em;
+				}
+			}
+		}
+
+		.headerImage{
+			width: 100%;
+			height: auto;
+
+			@media(max-width:767px){
+				width: 220px;
+			}
+		}
+	}
 }

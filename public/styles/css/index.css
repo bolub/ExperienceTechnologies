@@ -1,8 +1,110 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+html {
+  font-size: calc(12px + .4vw); }
+
+body {
+  font-family: 'Raleway', sans-serif; }
+
+hr {
+  width: 100px;
+  border: 0.8px solid #F2FD48;
+  padding: 0;
+  margin-top: 0; }
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='1' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
+
+.navbar-toggler {
+  outline: none !important; }
+
+p {
+  color: rgba(0, 0, 0, 0.75);
+  line-height: 30px; }
+
+::placeholder {
+  color: #86888C !important; }
+
+.lead {
+  font-size: 18px; }
+  @media screen and (max-width: 440px) {
+    .lead {
+      font-size: 16px; } }
+
+.c-1 {
+  order: 1;
+  text-align: left; }
+  @media (max-width: 767px) {
+    .c-1 {
+      order: 2;
+      text-align: center; } }
+
+.c-2 {
+  order: 2; }
+  @media (max-width: 767px) {
+    .c-2 {
+      order: 1; } }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900; }
+
 .bgPrimary {
   background: #000473; }
 
 .bgSecondary {
-  background: #F2FDAE; }
+  background: #F2FD48; }
 
-nav {
-  background: transparent; }
+header nav {
+  border-top: 2px solid #F2FD48; }
+  header nav .navbar-nav .nav-link {
+    color: white;
+    font-size: 18px;
+    margin-right: 12px;
+    letter-spacing: .3px; }
+    header nav .navbar-nav .nav-link:after {
+      content: '';
+      width: 0px;
+      height: 1px;
+      display: block;
+      background: #F2FD48;
+      transition: 300ms; }
+    header nav .navbar-nav .nav-link:hover:after {
+      width: 100%; }
+
+header .btn-outline-light:hover {
+  color: black !important; }
+
+header #landing {
+  margin-top: 3.8em;
+  height: 90vh; }
+  header #landing .preLandingHeading {
+    font-size: 1.375em; }
+    @media (max-width: 767px) {
+      header #landing .preLandingHeading {
+        display: none; } }
+  header #landing .landingBtn {
+    padding: .6rem 1.8rem .6rem 1.8rem;
+    font-size: 1.2em;
+    background: #F2FD48;
+    color: #343a40; }
+    header #landing .landingBtn:hover {
+      margin-left: 5px;
+      transition: all .3s;
+      background: #000473;
+      color: white !important;
+      border: 1px solid #F2FD48; }
+    @media (max-width: 440px) {
+      header #landing .landingBtn {
+        font-size: 1.5em; } }
+  header #landing .headerImage {
+    width: 100%;
+    height: auto; }
+    @media (max-width: 767px) {
+      header #landing .headerImage {
+        width: 220px; } }
