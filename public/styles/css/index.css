@@ -60,6 +60,12 @@ h6 {
 .bgSecondary {
   background: #F2FD48; }
 
+.cardHeader {
+  font-weight: bold;
+  font-size: 1.2em;
+  display: block;
+  margin-top: 1rem; }
+
 header nav {
   border-top: 2px solid #F2FD48; }
   header nav .navbar-nav .nav-link {

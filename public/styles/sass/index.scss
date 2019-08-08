@@ -91,6 +91,13 @@ h6 {
 	background: $secondaryColor;
 }
 
+.cardHeader{
+	font-weight: bold;
+	font-size: 1.2em;
+	display: block;
+	margin-top: 1rem;
+}
+
 header {
 	nav{
 		border-top: 2px solid $secondaryColor;
