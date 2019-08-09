@@ -1,0 +1,15 @@
+@import 'base/typography';
+@import 'base/color';
+@import 'components/hr';
+@import 'components/cards';
+@import 'layout/Navbar';
+@import 'layout/header';
+@import 'layout/forms';
+
+.sticky {
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	width: 100%;
+	transition: all .1s;
+}

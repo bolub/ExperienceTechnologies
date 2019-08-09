@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Work+Sans&display=swap');
+
+html {
+    font-size: calc(12px + .4vw);
+}
+
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+p {
+    color: rgba(0, 0, 0, 0.75);
+    line-height: 30px;
+}
+
+.lead {
+    font-size: 18px;
+
+    @media screen and (max-width:440px) {
+        & {
+            font-size: 16px;
+        }
+    }
+}
