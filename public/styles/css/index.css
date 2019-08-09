@@ -4,7 +4,7 @@ html {
   font-size: calc(12px + .4vw); }
 
 body {
-  font-family: 'Raleway', sans-serif; }
+  font-family: 'Work Sans', sans-serif; }
 
 hr {
   width: 100px;
@@ -12,8 +12,11 @@ hr {
   padding: 0;
   margin-top: 0; }
 
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='1' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
+.whiteToggler {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
+
+.blackToggler {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(20,50,115)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
 
 .navbar-toggler {
   outline: none !important; }
@@ -23,7 +26,8 @@ p {
   line-height: 30px; }
 
 ::placeholder {
-  color: #86888C !important; }
+  color: #86888C !important;
+  font-size: .8em; }
 
 .lead {
   font-size: 18px; }
@@ -62,17 +66,23 @@ h6 {
 
 .cardHeader {
   font-weight: bold;
-  font-size: 1.2em;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.05em;
   display: block;
   margin-top: 1rem; }
 
-header nav {
+.navborderTop {
   border-top: 2px solid #F2FD48; }
+
+.navborderBottom {
+  border-bottom: 1px solid #000473; }
+
+header nav {
+  transition: all .1s; }
   header nav .navbar-nav .nav-link {
-    color: white;
-    font-size: 17.5px;
+    font-size: 16.2px;
     margin-right: 12px;
-    letter-spacing: .3px; }
+    font-family: 'work sans', sans-serif; }
     header nav .navbar-nav .nav-link:after {
       content: '';
       width: 0px;
@@ -87,7 +97,6 @@ header .btn-outline-light:hover {
   color: black !important; }
 
 header #landing {
-  margin-top: 3.8em;
   height: 88vh; }
   header #landing .preLandingHeading {
     font-size: 1.375em; }
@@ -102,12 +111,6 @@ header #landing {
     font-size: 1.06em;
     background: #F2FD48;
     color: #343a40; }
-    header #landing .landingBtn:hover {
-      margin-left: 5px;
-      transition: all .3s;
-      background: #000473;
-      color: white !important;
-      border: 1px solid #F2FD48; }
     @media (max-width: 440px) {
       header #landing .landingBtn {
         font-size: 1.3em; } }
@@ -117,3 +120,10 @@ header #landing {
     @media (max-width: 767px) {
       header #landing .headerImage {
         width: 220px; } }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  transition: all .1s; }
