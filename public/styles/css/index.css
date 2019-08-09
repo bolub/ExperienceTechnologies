@@ -1,10 +1,34 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Work+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
 html {
   font-size: calc(12px + .4vw); }
 
 body {
   font-family: 'Work Sans', sans-serif; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900; }
+
+p {
+  color: rgba(0, 0, 0, 0.75);
+  line-height: 30px; }
+
+.lead {
+  font-size: 18px; }
+  @media screen and (max-width: 440px) {
+    .lead {
+      font-size: 16px; } }
+
+.bgPrimary {
+  background: #000473; }
+
+.bgSecondary {
+  background: #F2FD48; }
 
 hr {
   width: 100px;
@@ -12,28 +36,43 @@ hr {
   padding: 0;
   margin-top: 0; }
 
+.cardHeader {
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.05em;
+  display: block;
+  margin-top: 1rem; }
+
+.navbar-toggler {
+  outline: none !important; }
+
 .whiteToggler {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
 
 .blackToggler {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(20,50,115)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
 
-.navbar-toggler {
-  outline: none !important; }
+.navborderTop {
+  border-top: 2px solid #F2FD48; }
 
-p {
-  color: rgba(0, 0, 0, 0.75);
-  line-height: 30px; }
+.navborderBottom {
+  border-bottom: 1px solid #000473; }
 
-::placeholder {
-  color: #86888C !important;
-  font-size: .8em; }
-
-.lead {
-  font-size: 18px; }
-  @media screen and (max-width: 440px) {
-    .lead {
-      font-size: 16px; } }
+nav {
+  transition: all .1s; }
+  nav .navbar-nav .nav-link {
+    font-size: 16.2px;
+    margin-right: 12px;
+    font-family: 'work sans', sans-serif; }
+    nav .navbar-nav .nav-link:after {
+      content: '';
+      width: 0px;
+      height: 1px;
+      display: block;
+      background: #F2FD48;
+      transition: 300ms; }
+    nav .navbar-nav .nav-link:hover:after {
+      width: 100%; }
 
 .c-1 {
   order: 1;
@@ -48,50 +87,6 @@ p {
   @media (max-width: 767px) {
     .c-2 {
       order: 1; } }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 900; }
-
-.bgPrimary {
-  background: #000473; }
-
-.bgSecondary {
-  background: #F2FD48; }
-
-.cardHeader {
-  font-weight: bold;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.05em;
-  display: block;
-  margin-top: 1rem; }
-
-.navborderTop {
-  border-top: 2px solid #F2FD48; }
-
-.navborderBottom {
-  border-bottom: 1px solid #000473; }
-
-header nav {
-  transition: all .1s; }
-  header nav .navbar-nav .nav-link {
-    font-size: 16.2px;
-    margin-right: 12px;
-    font-family: 'work sans', sans-serif; }
-    header nav .navbar-nav .nav-link:after {
-      content: '';
-      width: 0px;
-      height: 1px;
-      display: block;
-      background: #F2FD48;
-      transition: 300ms; }
-    header nav .navbar-nav .nav-link:hover:after {
-      width: 100%; }
 
 header .btn-outline-light:hover {
   color: black !important; }
@@ -120,6 +115,10 @@ header #landing {
     @media (max-width: 767px) {
       header #landing .headerImage {
         width: 220px; } }
+
+::placeholder {
+  color: #86888C !important;
+  font-size: .8em; }
 
 .sticky {
   position: fixed;
