@@ -10,8 +10,10 @@ let navbarToggler = document.querySelector('.navbar-toggler-icon');
 
 let scrollTopButton = document.querySelector('.scrollTopButton');
 
+let logoText = document.querySelector('.logoText');
+
 function myFunction() {
-    if (this.scrollY >= 40) {
+    if (this.scrollY >= 70) {
 
         //navbar
         navbar.classList.remove('navborderTop');
@@ -29,11 +31,15 @@ function myFunction() {
         });
 
         //navLogo
-        logo.src = "images/logo/whiteLogo.png"
+        logo.src = "images/logo/whiteLogo.png";
 
-        logo.width = "40"
+        logo.width = "50"
 
         logo.classList.add("animated", "fadeInUp");
+
+        logoText.classList.add('textPrimary');
+
+        logoText.classList.remove('text-white');
 
     } else {
 
@@ -55,7 +61,11 @@ function myFunction() {
         });
 
         //logo
-        logo.src = "images/logo/blueLogo.png"
+        logo.src = "images/logo/blueLogo.png";
+
+        logoText.classList.add('text-white');
+
+        logoText.classList.remove('textPrimary');
 
     }
 

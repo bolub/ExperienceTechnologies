@@ -30,6 +30,9 @@ p {
 .bgSecondary {
   background: #F2FD48; }
 
+.textPrimary {
+  color: #000473; }
+
 hr {
   width: 100px;
   border: 0.8px solid #F2FD48;
@@ -55,15 +58,11 @@ hr {
 .navborderTop {
   border-top: 2px solid #F2FD48; }
 
-.navborderBottom {
-  border-bottom: 1px solid #000473; }
-
 nav {
   transition: all .1s; }
   nav .navbar-nav .nav-link {
     font-size: 16.2px;
-    margin-right: 12px;
-    font-family: 'work sans', sans-serif; }
+    margin-right: 12px; }
     nav .navbar-nav .nav-link:after {
       content: '';
       width: 0px;
@@ -115,10 +114,6 @@ header #landing {
     @media (max-width: 767px) {
       header #landing .headerImage {
         width: 220px; } }
-
-::placeholder {
-  color: #86888C !important;
-  font-size: .8em; }
 
 .sticky {
   position: fixed;

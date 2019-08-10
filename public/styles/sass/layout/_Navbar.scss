@@ -14,12 +14,6 @@
     border-top: 2px solid $secondaryColor;
 }
 
-.navborderBottom {
-    border-bottom: 1px solid $primaryColor;
-}
-
-
-
 nav {
     transition: all .1s;
 
@@ -28,7 +22,6 @@ nav {
             font-size: 16.2px;
             margin-right: 12px;
             // letter-spacing: .3px;
-            font-family: 'work sans', sans-serif;
 
             &:after {
                 content: '';
@@ -45,4 +38,3 @@ nav {
         }
     }
 }
-
