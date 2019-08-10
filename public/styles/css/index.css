@@ -115,6 +115,11 @@ header #landing {
       header #landing .headerImage {
         width: 220px; } }
 
+.footerHeader {
+  font-size: 1.1em;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif; }
+
 .sticky {
   position: fixed;
   top: 0;
