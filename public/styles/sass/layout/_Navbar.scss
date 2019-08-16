@@ -38,3 +38,10 @@ nav {
         }
     }
 }
+
+.navBtn,
+.nav-link {
+    @media(max-width:992px) {
+        margin-left: 75px;
+    }
+}
