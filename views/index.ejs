@@ -17,8 +17,9 @@
 	<% include partials/header.ejs %>
 
 	<main role="main" class="bg-light">
-		<div class="container">
-			<section id="about" class="wow animated fadeInUp py-5">
+
+		<section id="about" class="wow animated fadeInUp py-5">
+			<div class="container">
 				<h2 class="text-center mt-md-5">About us</h2>
 				<hr>
 
@@ -47,9 +48,11 @@
 						</p>
 					</div>
 				</div>
-			</section>
+			</div>
+		</section>
 
-			<section id="services" class="wow animated fadeInUp py-5">
+		 <section id="services" class="wow animated fadeInUp py-5">
+			<div class="container">
 				<h2 class="text-center mt-md-5">What we do</h2>
 				<hr>
 
@@ -116,15 +119,17 @@
 						</div>
 					</div>
 				</div>
-			</section>
+			</div>
+		</section>
 
-			<section id="portfolio" class="wow animated fadeInUp py-5">
+		<section id="portfolio" class="wow animated fadeInUp py-5">
+			<div class="container">
 				<h2 class="text-center mt-md-5">Our portfolio</h2>
 				<hr>
 
 				<div class="mt-4">
 					<div class="row mt-5 justify-content-center">
-						<div class="col-6 col-lg-4">
+						<div class="col-6 col-lg-4 d-flex justify-content-center">
 							<div class="card h-100 pt-3 pb-2 px-sm-2  rounded shadow-sm">
 								<div class="card-body">
 									<span class="cardHeader">Tolumi The Fashion People</span>
@@ -165,7 +170,7 @@
 						</div>
 					</div>
 
-					<!-- <div class="text-center mt-5">
+					<!--<div class="text-center mt-5">
 						<a href="/" class="project">
 							See all projects
 							<img 
@@ -175,45 +180,8 @@
 						</a>
 					</div> -->
 				</div>
-		</div>
-		</section>
-
-		<section id="contact" class="wow animated fadeInUp py-5">
-			<h2 class="text-center mt-md-5">Talk to us</h2>
-			<hr>
-
-			<div class="mt-4">
-				<p class="text-center lead">Send us a ring and we’ll get back to you as soon as we can. Feel
-					free to use the contact form below or send us an email <a href="#">here</a></p>
-
-				<div class="col-md-8 col-lg-6 m-auto">
-					<div class="form-group mt-5">
-						<label class="lead" for="name">Name/Company Name</label>
-						<input type="text" class="form-control shadow-sm bg-light py-4" placeholder="john doe" />
-					</div>
-
-					<div class="form-group">
-						<label class="lead" for="email">Email</label>
-						<input type="email" class="form-control shadow-sm bg-light py-4"
-							placeholder="johndoe@gmail.com" />
-					</div>
-
-					<div class="form-group my-4">
-						<label class="lead" for="phoneNumber">Phone Number</label>
-						<input type="tel" class="form-control shadow-sm bg-light py-4"
-							placeholder="(+1) 234 ___ ___ ___" />
-					</div>
-
-					<div class="form-group">
-						<label class="lead" for="name">Message</label>
-						<textarea class="form-control shadow-sm bg-light py-4" rows="3"
-							placeholder="Register for a course, Tell us about your project or just say hello"></textarea>
-					</div>
-
-					<button type="submit" class="btn btn-block bgPrimary text-white mt-4 py-3">Send Message</button>
-				</div>
 			</div>
-		</section>
+		</section> 
 
 		<div class="scrollTopButton">
 			<span class="d-flex mb-4">
@@ -222,10 +190,32 @@
 				</a>
 			</span>
 		</div>
-		</div>
+
+		<section id="call-to-action" class="bgPrimary wow animated fadeInUp py-5 text-white text-center mt-4">
+			<div class="container">
+				<h2>Have an Idea?</h2>
+
+				<p class="text-white my-4">
+					Let’s help transform your next big idea. We’d love to hear from you
+				</p>
+
+				<div class="d-flex justify-content-center">
+					<button class="bgSecondary btn btn-sm" data-toggle="modal" data-target="#contact">Start a
+						project</button>
+
+					<a href="/" class="my-auto ml-2 text-white" data-toggle="modal" data-target="#contact"
+						style="font-size:.9em">
+						Send a message
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<% include partials/messageModal %>
 	</main>
 
 	<% include partials/footer %>
+
 
 	<script src="libraries/bootstrap/jquery.min.js"></script>
 	<script src="libraries/bootstrap/bootstrap.min.js"></script>
@@ -246,7 +236,6 @@
 		new WOW().init();
 	</script>
 	<script src="scripts/onScroll.js"></script>
-
 </body>
 
 </html>
