@@ -41,7 +41,7 @@ hr {
 
 @media (max-width: 576px) {
   .portfolioCard, .serviceCard {
-    width: 75%; } }
+    width: 85%; } }
 
 .portfolioCard .cardHeader, .serviceCard .cardHeader {
   font-weight: bold;
