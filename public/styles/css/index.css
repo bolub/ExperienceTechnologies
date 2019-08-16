@@ -65,7 +65,7 @@ hr {
 nav {
   transition: all .1s; }
   nav .navbar-nav .nav-link {
-    font-size: 16.2px;
+    font-size: .92em;
     margin-right: 12px; }
     nav .navbar-nav .nav-link:after {
       content: '';
