@@ -27,6 +27,7 @@ header {
 
     #landing {
         height: 88vh;
+        clip-path: polygon(0 0, 100% 0%, 100% 89%, 0% 100%);
 
         .preLandingHeading {
             font-size: 1.375em;

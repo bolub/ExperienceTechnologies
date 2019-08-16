@@ -1,7 +1,15 @@
-.cardHeader {
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.05em;
-    display: block;
-    margin-top: 1rem;
+.portfolioCard, .serviceCard{
+    @media(max-width:576px){
+        &{
+            width: 75%;
+        }
+    }
+
+    .cardHeader {
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.05em;
+        display: block;
+        margin-top: 1rem;
+    }
 }

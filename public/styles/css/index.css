@@ -39,7 +39,11 @@ hr {
   padding: 0;
   margin-top: 0; }
 
-.cardHeader {
+@media (max-width: 576px) {
+  .portfolioCard, .serviceCard {
+    width: 75%; } }
+
+.portfolioCard .cardHeader, .serviceCard .cardHeader {
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.05em;
@@ -91,7 +95,8 @@ header .btn-outline-light:hover {
   color: black !important; }
 
 header #landing {
-  height: 88vh; }
+  height: 88vh;
+  clip-path: polygon(0 0, 100% 0%, 100% 89%, 0% 100%); }
   header #landing .preLandingHeading {
     font-size: 1.375em; }
     @media (max-width: 767px) {
