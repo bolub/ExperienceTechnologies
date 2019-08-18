@@ -2,6 +2,7 @@
 @import 'base/color';
 @import 'components/hr';
 @import 'components/cards';
+@import 'components/select';
 @import 'layout/Navbar';
 @import 'layout/header';
 @import 'layout/forms';
@@ -15,11 +16,11 @@
 	transition: all .1s;
 }
 
-.project{
+.project {
 	color: black;
 }
 
-.project:hover{
+.project:hover {
 	color: black;
 	text-decoration: underline;
 }
