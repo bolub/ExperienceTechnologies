@@ -24,6 +24,16 @@ p {
     .lead {
       font-size: 16px; } }
 
+::placeholder,
+select {
+  font-size: .9em !important; }
+
+#contact p,
+#contact label,
+#startProject p,
+#startProject label {
+  font-size: .9em; }
+
 .bgPrimary {
   background: #000473; }
 

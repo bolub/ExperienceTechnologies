@@ -33,3 +33,16 @@ p {
         }
     }
 }
+
+::placeholder,
+select {
+    font-size: .9em !important;
+}
+
+#contact,
+#startProject {
+    p,
+    label {
+        font-size: .9em;
+    }
+}
