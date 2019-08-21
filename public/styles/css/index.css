@@ -131,9 +131,8 @@ header #landing {
     @media (max-width: 767px) {
       header #landing .preLandingHeading {
         display: none; } }
-  @media (max-width: 767px) {
-    header #landing .landingHeading {
-      font-size: 2em; } }
+  header #landing .landingHeading {
+    font-size: 2em; }
   header #landing .landingBtn {
     padding: .6rem 1.8rem .6rem 1.8rem;
     font-size: 1.06em;

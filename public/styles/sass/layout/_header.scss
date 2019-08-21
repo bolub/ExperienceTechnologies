@@ -46,11 +46,12 @@ header {
         }
 
         .landingHeading {
-            @media(max-width: 767px) {
-                & {
-                    font-size: 2em;
-                }
-            }
+            font-size: 2em;
+            // @media(max-width: 767px) {
+            //     & {
+            //         font-size: 2em;
+            //     }
+            // }
         }
 
         .landingBtn {
@@ -58,22 +59,6 @@ header {
             font-size: 1.06em;
             background: $secondaryColor;
             color: #343a40;
-
-            // &:hover{
-            // 	margin-left: 5px;
-            // 	transition: all .3s;
-            // 	background: $primaryColor;
-            // 	color: white !important;
-            // 	border: 1px solid $secondaryColor;
-
-            // 	.i1{
-            // 		display: none;
-            // 	}
-
-            // 	.i2{
-            // 		display: block;
-            // 	}
-            // }
 
             @media(max-width:440px) {
                 & {
