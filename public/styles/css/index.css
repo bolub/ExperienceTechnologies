@@ -41,7 +41,10 @@ select {
   background: #F2FD48; }
 
 .textPrimary {
-  color: #000473; }
+  color: #000473 !important; }
+
+.cursorPointer {
+  cursor: pointer; }
 
 hr {
   width: 100px;
